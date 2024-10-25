@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feeling</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+
+    <h1>How are you feeling today?</h1>
+
+    <form action="/get_emotion" method="POST">
+        <button type="submit" name="image_value"  value="happy">
+            <img src="../static/images/happy.png" alt="Happy">
+            <p>Happy</p>
+        </button>
+        <button type="submit" name="image_value"  value="loved">
+            <img src="../static/images/loved.png" alt="Loved">
+            <p>Loved</p>
+        </button>
+        <button type="submit" name="image_value" g" value="amazing">
+            <img src="../static/images/amazing.png" alt="Amazing">
+            <p>Amazing</p>
+        </button>
+        <button type="submit" name="image_value" value="sad">
+            <img src="../static/images/sad.png" alt="Sad">
+            <p>Sad</p>
+        </button>
+        <button type="submit" name="image_value"  value="angry">
+            <img src="../static/images/angry.png" alt="Angry">
+            <p>Angry</p>
+        </button>
+    </form>
+
+</div>
+</body>
+</html>

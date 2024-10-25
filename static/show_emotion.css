@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lilita+One&display=swap');
+
+body{
+  background: #02031f;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   width: 100%;
+   overflow: hidden;
+   padding: 20px;
+}
+
+#text {
+  width:100%;
+  height:100%;
+  color: #edffe0;
+  font-family: "Lilita One", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+  width: 80%;
+  height: 300px;
+  background: #030426;
+  box-shadow: 0 0 2em black;
+  border-radius: 8px;
+  position: absolute;
+
+}
+
+.card:hover{
+  box-shadow: 0 0 2em #5ce7fa;
+  transition-duration: 1s;
+}
+
+img{
+  width: 200px;
+  height: 200px;
+  margin: 0;
+  border-bottom: 1px solid #ffffff91;
+  object-fit: cover;
+}
+
+.card-background{
+  width: 82%;
+  height: 320px;
+  background-image: linear-gradient(90deg, rgb(204, 88, 0) 0%, rgb(0, 124, 186) 50%, rgb(255, 94, 0) 100%);
+  background-size: 300% 100%;
+  animation: gradient 1.5s infinite alternate;
+  border-radius: 8px;
+   box-shadow: 0 0 1em black;
+
+
+  
+}
+
+
+@keyframes gradient{
+  0% {
+    background-position-x: 0%;
+  }
+  50%{
+   background-position-x: 50%;
+  }
+  
+  100% {
+    background-position-x: 100%;
+
+  }
+}

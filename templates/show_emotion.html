@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='show_emotion.css') }}">
+</head>
+<body>
+        <div class="card"> <img src="../static/images/{{ image_value }}.png"> <p id="text"> {{ value }} </p> </div>
+
+        <div class="card-background"> </div>
+</body>
+</html>
